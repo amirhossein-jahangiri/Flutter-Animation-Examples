@@ -1,6 +1,9 @@
-# learn_animation
+# Flutter Animation Examples
 
-Sample project for learn Animations in Flutter
+Sample project for animation examples in Flutter
+
+<b>Covered Widgets:</b>
+- Animated Container
 
 ## Getting Started
 

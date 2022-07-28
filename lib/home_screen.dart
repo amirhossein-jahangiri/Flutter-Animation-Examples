@@ -6,7 +6,6 @@ class HomeScreen extends StatelessWidget {
 
   final TextStyle defaultTextStyle = const TextStyle(
     fontSize: 18.0,
-    fontWeight: FontWeight.bold,
     letterSpacing: 1.2,
   );
 
