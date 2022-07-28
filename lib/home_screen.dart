@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:learn_animation/animated_screen/animated_container.dart';
+
+import 'items_widget.dart';
+import '/animated_screen/animated_container_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
-  final TextStyle defaultTextStyle = const TextStyle(
-    fontSize: 18.0,
-    letterSpacing: 1.2,
-  );
+  _buildRoutingWithName(BuildContext context, Widget widgetName) {
+    return Navigator.of(context).push(
+      MaterialPageRoute(builder: (context) => widgetName),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,18 +19,25 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20.0),
         children: [
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const AnimatedContainerScreen(),
-                ),
-              );
-            },
-            child: Text('Animated Container', style: defaultTextStyle),
+          Items(
+            title: 'Animated Container',
+            press: () => _buildRoutingWithName(
+              context,
+              const AnimatedContainerScreen(),
+            ),
           ),
+
+          Items(
+            title: 'Animated Container',
+            press: () => _buildRoutingWithName(
+              context,
+              const AnimatedContainerScreen(),
+            ),
+          ),
+
         ],
       ),
     );
   }
 }
+
