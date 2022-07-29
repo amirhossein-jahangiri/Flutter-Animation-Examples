@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// TODO: using AnimatedOpacity widget
+// TODO: using AnimatedOpacity widget animated version of Opacity widget
 
 class AnimatedOpacityScreen extends StatefulWidget {
   const AnimatedOpacityScreen({Key? key}) : super(key: key);

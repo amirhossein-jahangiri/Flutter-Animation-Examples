@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-// TODO: using AnimatedContainer widget
+// TODO: using AnimatedContainer widget animated version of Container widget
 
 class AnimatedContainerScreen extends StatefulWidget {
   const AnimatedContainerScreen({Key? key}) : super(key: key);

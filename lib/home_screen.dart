@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'items_widget.dart';
 import '/animated_screen/animated_container_widget.dart';
 import '/animated_screen/animated_opacity_widget.dart';
+import '/animated_screen/animated_hero_widget.dart';
+import '/animated_screen/animated_align_widget.dart';
+import '/animated_screen/animated_default_text_style_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -35,6 +38,32 @@ class HomeScreen extends StatelessWidget {
               const AnimatedOpacityScreen(),
             ),
           ),
+
+          Items(
+            title: 'Animated Hero',
+            press: () => _buildRoutingWithName(
+              context,
+              const AnimatedHeroScreen(),
+            ),
+          ),
+
+          Items(
+            title: 'Animated Align',
+            press: () => _buildRoutingWithName(
+              context,
+              const AnimatedAlignScreen(),
+            ),
+          ),
+
+          Items(
+            title: 'Animated Default TextStyle',
+            press: () => _buildRoutingWithName(
+              context,
+              const AnimatedDefaultTextStyleScreen(),
+            ),
+          ),
+
+
 
         ],
       ),

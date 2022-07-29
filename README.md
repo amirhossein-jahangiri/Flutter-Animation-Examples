@@ -4,6 +4,10 @@ Sample project for animation examples in Flutter
 
 <b>Covered Widgets:</b>
 - Animated Container
+- Animated Opacity
+- Animated Hero
+- Animated Align
+- Animated Default TextStyle
 
 ## Getting Started
 
