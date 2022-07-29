@@ -36,6 +36,7 @@ class _AnimatedDefaultTextStyleScreenState
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // TODO: Without Animation
             Expanded(
               child: Center(
                 child: DefaultTextStyle(
@@ -51,6 +52,7 @@ class _AnimatedDefaultTextStyleScreenState
 
             const Divider(),
 
+            // TODO: With Animation
             Expanded(
               child: Center(
                 child: AnimatedDefaultTextStyle(

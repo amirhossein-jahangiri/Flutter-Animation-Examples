@@ -29,14 +29,38 @@ class _AnimatedAlignScreenState extends State<AnimatedAlignScreen> {
         child: const Icon(Icons.change_circle_rounded),
       ),
       body: Center(
-        child: AnimatedAlign(
-          alignment: _align,
-          duration: const Duration(milliseconds: 500),
-          curve: Curves.easeInCubic,
-          child: const FlutterLogo(
-            style: FlutterLogoStyle.stacked,
-            size: 150,
-          ),
+        child: Column(
+          children: [
+            // TODO: Without Animation
+            Expanded(
+              child: Center(
+                child: Align(
+                  alignment: _align,
+                  child: const FlutterLogo(
+                    style: FlutterLogoStyle.stacked,
+                    size: 150,
+                  ),
+                ),
+              ),
+            ),
+
+            const Divider(),
+
+            // TODO: With Animation
+            Expanded(
+              child: Center(
+                child: AnimatedAlign(
+                  alignment: _align,
+                  duration: const Duration(milliseconds: 500),
+                  curve: Curves.easeInCubic,
+                  child: const FlutterLogo(
+                    style: FlutterLogoStyle.stacked,
+                    size: 150,
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

@@ -12,16 +12,16 @@ class AnimatedContainerScreen extends StatefulWidget {
 }
 
 class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
-  double _animatedHeight = 300;
-  double _animatedWidth = 300;
+  double _animatedHeight = 100;
+  double _animatedWidth = 100;
   Color _changeColor = const Color(0xFFFFB300);
   double _circularRadius = 0.0;
   final Random random = Random();
 
   void updateContainerSize() {
-    setState((){
-      _animatedHeight = random.nextDouble() * 500;
-      _animatedWidth = random.nextDouble() * 500;
+    setState(() {
+      _animatedHeight = random.nextDouble() * 300;
+      _animatedWidth = random.nextDouble() * 300;
       _changeColor = Colors.primaries[random.nextInt(17)];
       _circularRadius = random.nextDouble() * 50;
     });
@@ -36,14 +36,40 @@ class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
         child: const Icon(Icons.change_circle_rounded),
       ),
       body: Center(
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 400),
-          height: _animatedHeight,
-          width: _animatedWidth,
-          decoration: BoxDecoration(
-            color: _changeColor,
-            borderRadius: BorderRadius.circular(_circularRadius),
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // TODO: Without Animation
+            Expanded(
+              child: Center(
+                child: Container(
+                  height: _animatedHeight,
+                  width: _animatedWidth,
+                  decoration: BoxDecoration(
+                    color: _changeColor,
+                    borderRadius: BorderRadius.circular(_circularRadius),
+                  ),
+                ),
+              ),
+            ),
+
+            const Divider(),
+
+            // TODO: With Animation
+            Expanded(
+              child: Center(
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 400),
+                  height: _animatedHeight,
+                  width: _animatedWidth,
+                  decoration: BoxDecoration(
+                    color: _changeColor,
+                    borderRadius: BorderRadius.circular(_circularRadius),
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

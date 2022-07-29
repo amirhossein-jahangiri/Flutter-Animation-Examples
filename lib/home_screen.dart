@@ -10,7 +10,7 @@ import '/animated_screen/animated_default_text_style_widget.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
-  _buildRoutingWithName(BuildContext context, Widget widgetName) {
+  Future<dynamic> _buildRoutingWithName(BuildContext context, Widget widgetName) {
     return Navigator.of(context).push(
       MaterialPageRoute(builder: (context) => widgetName),
     );

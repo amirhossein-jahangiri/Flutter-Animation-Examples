@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Learn Animation',
+      title: 'Flutter Animation Examples',
       home: HomeScreen(),
     );
   }
