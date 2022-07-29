@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'items_widget.dart';
 import '/animated_screen/animated_container_widget.dart';
+import '/animated_screen/animated_opacity_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -28,10 +29,10 @@ class HomeScreen extends StatelessWidget {
           ),
 
           Items(
-            title: 'Animated Container',
+            title: 'Animated Opacity',
             press: () => _buildRoutingWithName(
               context,
-              const AnimatedContainerScreen(),
+              const AnimatedOpacityScreen(),
             ),
           ),
 
