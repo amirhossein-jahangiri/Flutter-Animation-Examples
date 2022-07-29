@@ -3,11 +3,11 @@
 Sample project for animation examples in Flutter
 
 <b>Covered Widgets:</b>
-- Animated Container
-- Animated Opacity
-- Animated Hero
-- Animated Align
-- Animated Default TextStyle
+- Animated Container , Container
+- Animated Opacity , Opacity
+- Animated Hero , Default
+- Animated Align , Align
+- Animated Default TextStyle , Default TextStyle
 
 ## Getting Started
 
