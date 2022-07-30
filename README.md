@@ -8,6 +8,11 @@ Sample project for animation examples in Flutter
 - Animated Hero , Default
 - Animated Align , Align
 - Animated Default TextStyle , Default TextStyle
+- Animated Scale , Transform.Scale
+- Animated Rotation , Transform.Rotate
+- Animated Slide , Transform.Translate
+- Animated Padding , Padding
+- Animated Physical Model , Physical Model
 
 ## Getting Started
 

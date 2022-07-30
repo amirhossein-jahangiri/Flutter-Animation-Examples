@@ -6,6 +6,11 @@ import '/animated_screen/animated_opacity_widget.dart';
 import '/animated_screen/animated_hero_widget.dart';
 import '/animated_screen/animated_align_widget.dart';
 import '/animated_screen/animated_default_text_style_widget.dart';
+import '/animated_screen/animated_scale_widget.dart';
+import '/animated_screen/animated_rotation_widget.dart';
+import '/animated_screen/animated_slide_widget.dart';
+import '/animated_screen/animated_padding_widget.dart';
+import '/animated_screen/animated_physical_model_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -63,7 +68,45 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
 
+          Items(
+            title: 'Animated Scale',
+            press: () => _buildRoutingWithName(
+              context,
+              const AnimatedScaleScreen(),
+            ),
+          ),
 
+          Items(
+            title: 'Animated Rotation',
+            press: () => _buildRoutingWithName(
+              context,
+              const AnimatedRotationScreen(),
+            ),
+          ),
+
+          Items(
+            title: 'Animated Slide',
+            press: () => _buildRoutingWithName(
+              context,
+              const AnimatedSlideScreen(),
+            ),
+          ),
+
+          Items(
+            title: 'Animated Padding',
+            press: () => _buildRoutingWithName(
+              context,
+              const AnimatedPaddingScreen(),
+            ),
+          ),
+
+          Items(
+            title: 'Animated Physical Model',
+            press: () => _buildRoutingWithName(
+              context,
+              const AnimatedPhysicalModelScreen(),
+            ),
+          ),
 
         ],
       ),
