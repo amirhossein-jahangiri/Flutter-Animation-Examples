@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'items_widget.dart';
+import 'item_widgets.dart';
 import '/animated_screen/animated_container_widget.dart';
 import '/animated_screen/animated_opacity_widget.dart';
 import '/animated_screen/animated_hero_widget.dart';
